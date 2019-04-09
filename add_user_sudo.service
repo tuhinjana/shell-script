@@ -1,0 +1,10 @@
+[Unit]
+Description=Job that runs your user script to add sudo user
+
+[Service]
+ExecStart=<PWD>/add_sudo_user.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
